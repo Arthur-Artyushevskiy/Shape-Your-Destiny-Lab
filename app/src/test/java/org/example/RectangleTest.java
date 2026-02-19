@@ -18,4 +18,10 @@ class RectangleTest {
         assertTrue(rectangle.getPerimeter() - 17.62 < 0.0001, "Value should be less than " + 0.0001);
     }
 
+
+    @Test
+    void testNumberOfSides(){
+        var rectangle = new Rectangle("RectangleBob", 2.98, 5.83);
+        assertEquals(4, rectangle.numberOfSides());
+    }
 }

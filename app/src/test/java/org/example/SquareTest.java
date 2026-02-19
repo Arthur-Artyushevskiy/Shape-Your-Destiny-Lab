@@ -21,4 +21,12 @@ public class SquareTest {
         assertTrue(square.getArea() - 10.24 < 0.0001, "Value should be less than " + 0.0001);
 
     }
+
+
+    @Test
+    void testNumberOfSides(){
+        var square = new Square("SquareBob", 2.56);
+        assertEquals(4, square.numberOfSides());
+    }
+
 }

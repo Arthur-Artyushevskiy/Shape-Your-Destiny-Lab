@@ -1,6 +1,6 @@
 package org.example;
 
-public class RightTriangle extends Shape{
+public class RightTriangle extends Shape implements Polygon{
     double base;
     double height;
 
@@ -20,6 +20,10 @@ public class RightTriangle extends Shape{
         return base + height + getHypothenus();
     }
 
+    @Override
+    public int numberOfSides(){
+        return 3;
+    }
 
     double getHypothenus(){
         return Math.pow(Math.pow(base, 2) + Math.pow(height, 2), 0.5);

@@ -21,4 +21,9 @@ class RightTriangleTest {
 
     }
 
+    @Test
+    void testNumnberOfSides(){
+        var rightTriangle = new RightTriangle("RectangleBob", 2.98, 5.83);
+        assertEquals(3, rightTriangle.numberOfSides());
+    }
 }

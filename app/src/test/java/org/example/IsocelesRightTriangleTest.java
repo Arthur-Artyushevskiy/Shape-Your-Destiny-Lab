@@ -23,4 +23,11 @@ public class IsocelesRightTriangleTest {
     }
 
 
+    @Test
+    void testNumberOfSides(){
+        var isocelesRightTriangle = new IsocelesRightTriangle("IsocelesBob", 2.98);
+
+       assertEquals(3, isocelesRightTriangle.numberOfSides());
+
+    }
 }
