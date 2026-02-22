@@ -17,7 +17,7 @@ public class RightTriangle extends Shape implements Polygon{
 
     @Override
     double getPerimeter() {
-        return base + height + getHypothenus();
+        return base + height + getHypotenuse();
     }
 
     @Override
@@ -25,7 +25,7 @@ public class RightTriangle extends Shape implements Polygon{
         return 3;
     }
 
-    double getHypothenus(){
+    double getHypotenuse(){
         return Math.pow(Math.pow(base, 2) + Math.pow(height, 2), 0.5);
     }
 }
